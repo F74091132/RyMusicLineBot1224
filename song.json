@@ -1,0 +1,786 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "阿公阿嬤的芭樂",
+            "margin": "xs",
+            "size": "xxl",
+            "color": "#000000",
+            "weight": "regular",
+            "style": "normal"
+          }
+        ]
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.cc/i1/2022/12/20/mMryuj.jpg",
+        "margin": "none",
+        "size": "4xl",
+        "aspectRatio": "1:1"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://upload.cc/i1/2022/12/19/ymn5Hs.png"
+              },
+              {
+                "type": "text",
+                "text": " 尤時雨, 2021",
+                "offsetStart": "sm",
+                "color": "#0000ff"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Spotify",
+              "uri": "https://open.spotify.com/track/7nHosCWo9Rf4WCzmTCViXo?si=a34e4223e1e1426c"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "YouTube",
+              "uri": "https://youtu.be/pMU8Yr388d4"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "KKBOX",
+              "uri": "https://kkbox.fm/ksnTtG"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "成功登大人",
+            "margin": "xs",
+            "size": "xxl",
+            "color": "#000000",
+            "weight": "regular",
+            "style": "normal"
+          }
+        ]
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.cc/i1/2022/12/20/b5eNIF.jpg",
+        "size": "4xl",
+        "aspectRatio": "1:1",
+        "margin": "none"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://upload.cc/i1/2022/12/19/ymn5Hs.png"
+              },
+              {
+                "type": "text",
+                "text": " 尤時雨, 2021",
+                "offsetStart": "sm",
+                "color": "#0000ff"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Spotify",
+              "uri": "https://open.spotify.com/track/2R4596hLLw0wq3X4rPkVR9?si=21d4be3088bf4361"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "YouTube",
+              "uri": "https://youtu.be/yt_ukKbSNdM"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "KKBOX",
+              "uri": "https://kkbox.fm/7I1KjBs"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "堯平",
+            "margin": "xs",
+            "size": "xxl",
+            "color": "#000000",
+            "weight": "regular",
+            "style": "normal"
+          }
+        ]
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.cc/i1/2022/12/20/2SEFAN.jpg",
+        "margin": "none",
+        "size": "4xl",
+        "aspectRatio": "1:1"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://upload.cc/i1/2022/12/19/ymn5Hs.png"
+              },
+              {
+                "type": "text",
+                "text": " 尤時雨, 2022",
+                "offsetStart": "sm",
+                "color": "#0000ff"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Spotify",
+              "uri": "https://open.spotify.com/track/2jKoMq17DU4JyxXe8BhkDq?si=69b2d0e16fe64392"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "YouTube",
+              "uri": "https://youtu.be/XnPQEiAIhUA"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "KKBOX",
+              "uri": "https://kkbox.fm/dszE0f"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "雨後星辰",
+            "margin": "xs",
+            "size": "xxl",
+            "color": "#000000",
+            "weight": "regular",
+            "style": "normal"
+          }
+        ]
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.cc/i1/2022/12/20/zduyZJ.jpg",
+        "size": "4xl",
+        "margin": "none",
+        "aspectRatio": "1:1"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://upload.cc/i1/2022/12/19/ymn5Hs.png"
+              },
+              {
+                "type": "text",
+                "text": " 尤時雨,李星辰 2022",
+                "offsetStart": "sm",
+                "color": "#0000ff"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Spotify",
+              "uri": "https://youtu.be/Uq6jKfGWYTo"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "YouTube",
+              "uri": "https://youtu.be/Uq6jKfGWYTo"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "KKBOX",
+              "uri": "https://kkbox.fm/1K1AKAs"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "成大資工我們的家",
+            "margin": "xs",
+            "size": "xxl",
+            "color": "#000000",
+            "weight": "regular",
+            "style": "normal"
+          }
+        ]
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.cc/i1/2022/12/20/3vMzYc.jpg",
+        "margin": "none",
+        "size": "5xl",
+        "aspectMode": "fit"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://upload.cc/i1/2022/12/19/ymn5Hs.png"
+              },
+              {
+                "type": "text",
+                "text": "尤時雨.林志芸.曾鈺安.黃敏寧, 2022",
+                "offsetStart": "sm",
+                "color": "#0000ff"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Spotify",
+              "uri": "https://open.spotify.com/track/5xik6mTQ3lyqRCHblzGnCz?si=23f68fa810014fcf"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "YouTube",
+              "uri": "https://youtu.be/O7_JJPVzL5g"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "KKBOX",
+              "uri": "https://open.spotify.com/track/5xik6mTQ3lyqRCHblzGnCz?si=23f68fa810014fcf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "讓你倚靠的力量",
+            "margin": "xs",
+            "size": "xxl",
+            "color": "#000000",
+            "weight": "regular",
+            "style": "normal"
+          }
+        ]
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.cc/i1/2022/12/20/7tBc0R.jpg",
+        "size": "4xl",
+        "margin": "none",
+        "aspectRatio": "1:1"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://upload.cc/i1/2022/12/19/ymn5Hs.png"
+              },
+              {
+                "type": "text",
+                "text": "群星,2022",
+                "offsetStart": "sm",
+                "color": "#0000ff"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Spotify",
+              "uri": "https://open.spotify.com/track/5Vc8K9b2i7Wg0WbXYhygSZ?si=caa22ec07265493b"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "YouTube",
+              "uri": "https://youtu.be/7uRSWzbK0Jo"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "KKBOX",
+              "uri": "https://kkbox.fm/2Q1u0Ts"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "明台資鮭魚軍艦",
+            "margin": "xs",
+            "size": "xxl",
+            "color": "#000000",
+            "weight": "regular",
+            "style": "normal"
+          }
+        ]
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.cc/i1/2022/12/20/mfWJIv.jpg",
+        "size": "4xl",
+        "margin": "none",
+        "aspectRatio": "1:1"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://upload.cc/i1/2022/12/19/ymn5Hs.png"
+              },
+              {
+                "type": "text",
+                "text": " 尤時雨.林志芸, 2022",
+                "offsetStart": "sm",
+                "color": "#0000ff"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Spotify",
+              "uri": "https://open.spotify.com/track/0N308MbWv4Kde00KZIeyaw?si=329d8c0d704b457d"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "YouTube",
+              "uri": "https://youtu.be/6Jx08FCW_Mc"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "KKBOX",
+              "uri": "https://open.spotify.com/track/0N308MbWv4Kde00KZIeyaw?si=329d8c0d704b457d"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "人間好時節",
+            "margin": "xs",
+            "size": "xxl",
+            "color": "#000000",
+            "weight": "regular",
+            "style": "normal"
+          }
+        ]
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.cc/i1/2022/12/20/d2WpAG.jpg",
+        "margin": "none",
+        "size": "4xl",
+        "aspectMode": "cover",
+        "aspectRatio": "1:1"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://upload.cc/i1/2022/12/19/ymn5Hs.png"
+              },
+              {
+                "type": "text",
+                "text": " 尤時雨, 2022",
+                "offsetStart": "sm",
+                "color": "#0000ff"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Spotify",
+              "uri": "https://youtu.be/QEgtihG2hkk"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "YouTube",
+              "uri": "https://youtu.be/QEgtihG2hkk"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "KKBOX",
+              "uri": "https://kkbox.fm/7v1H8Bs"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "旦保",
+            "margin": "xs",
+            "size": "xxl",
+            "color": "#000000",
+            "weight": "regular",
+            "style": "normal"
+          }
+        ]
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.cc/i1/2022/12/20/Er8RWI.jpg",
+        "margin": "none",
+        "size": "4xl",
+        "aspectRatio": "1:1"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://upload.cc/i1/2022/12/19/ymn5Hs.png"
+              },
+              {
+                "type": "text",
+                "text": " 尤時晴.尤時雨, 2022",
+                "offsetStart": "sm",
+                "color": "#0000ff"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Spotify",
+              "uri": "https://open.spotify.com/track/5nyrT2tOB0PqieSAxhNNtT?si=6a4282d4cd594f49"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "YouTube",
+              "uri": "https://youtu.be/3m2kF0DPjZU"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "KKBOX",
+              "uri": "https://kkbox.fm/Aw1eXps"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "歡喜互惠",
+            "margin": "xs",
+            "size": "xxl",
+            "color": "#000000",
+            "weight": "regular",
+            "style": "normal"
+          }
+        ]
+      },
+      "hero": {
+        "type": "image",
+        "url": "https://upload.cc/i1/2022/12/20/mjJ7g1.jpg",
+        "margin": "none",
+        "size": "4xl",
+        "aspectRatio": "1:1"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://upload.cc/i1/2022/12/19/ymn5Hs.png"
+              },
+              {
+                "type": "text",
+                "text": " 尤時雨, 2022",
+                "offsetStart": "sm",
+                "color": "#0000ff"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Spotify",
+              "uri": "https://open.spotify.com/track/5Vc8K9b2i7Wg0WbXYhygSZ?si=caa22ec07265493b"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "YouTube(Upcoming)",
+              "uri": "https://www.youtube.com/@rennyyo6644"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "KKBOX",
+              "uri": "https://kkbox.fm/Dz1DSHs"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

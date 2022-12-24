@@ -1,0 +1,99 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://upload.cc/i1/2022/12/19/jEdlOW.jpg",
+    "size": "full",
+    "aspectRatio": "1:1",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "尤時雨",
+        "size": "xxl",
+        "weight": "bold",
+        "margin": "none"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "音樂藝術家",
+            "size": "xl",
+            "margin": "md"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "NCKU CSIE 113. TCFSH 80",
+                "margin": "md",
+                "size": "md"
+              }
+            ],
+            "margin": "md"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "中央存保111年原創歌曲參獎",
+                "margin": "md",
+                "size": "md"
+              }
+            ],
+            "margin": "md"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "YouTube",
+          "uri": "https://www.youtube.com/@rennyyo6644"
+        }
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Instagram",
+          "uri": "https://www.instagram.com/renny_yo/"
+        }
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Facebook",
+          "uri": "https://www.facebook.com/renny.gml"
+        }
+      }
+    ]
+  }
+}
