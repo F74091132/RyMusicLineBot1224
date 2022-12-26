@@ -33,7 +33,7 @@ class TocMachine(GraphMachine):
         return True
     #選擇要查詢的分類
     def on_enter_initial(self, event):
-        send_text_message(event.reply_token, '輸入『music』進入音樂模式；\n隨時輸入『chat』跟bot聊天；\n隨時輸入『restart』從頭開始。')
+        send_text_message(event.reply_token, '輸入『music』進入音樂模式；\n輸入『lyrics』進入歌詞總覽；\n隨時輸入『chat』跟bot聊天；\n隨時輸入『restart』從頭開始。')
     # user start, 輸入 music
     def is_going_to_input_search(self, event):
         text = event.message.text
@@ -93,7 +93,27 @@ class TocMachine(GraphMachine):
             ),
             # 傳文字
             TextSendMessage(  
+                
                 text = "輸入restart回到起始"
+            ),]
+        line_bot_api.reply_message(event.reply_token, message)
+
+    def is_going_to_lyrics(self, event):
+        text = event.message.text
+        if(text == 'lyrics'):
+                return True
+        return False
+
+    def on_enter_lyrics(self, event):
+        message = [
+            #傳圖片
+            #VideoSendMessage( 
+            #    original_content_url = "https://imgur.com/a/TCZhDSO",
+            #    preview_image_url = "https://upload.cc/i1/2022/12/20/Er8RWI.jpg"
+            #),
+            # 傳文字
+            TextSendMessage(  
+                text = "https://mojim.com/twh242206.htm\n輸入restart回到起始"
             ),]
         line_bot_api.reply_message(event.reply_token, message)
 
