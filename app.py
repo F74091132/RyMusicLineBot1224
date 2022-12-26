@@ -20,6 +20,9 @@ machine = TocMachine(
         'intro',
         'lists',
         'listen',
+        'age',
+        'gender',
+        'recommendFinal',
         'lyrics',
         'chat',
         'chat2',
@@ -30,11 +33,12 @@ machine = TocMachine(
         {'trigger': 'advance', 'source': 'initial', 'dest': 'input_search', 'conditions': 'is_going_to_input_search'},
         {'trigger': 'advance', 'source': 'input_search', 'dest': 'intro', 'conditions': 'is_going_to_intro'},
         {'trigger': 'advance', 'source': 'input_search', 'dest': 'lists', 'conditions': 'is_going_to_lists'},
+        {'trigger': 'advance', 'source': 'input_search', 'dest': 'lyrics', 'conditions': 'is_going_to_lyrics'},
         {'trigger': 'advance', 'source': 'input_search', 'dest': 'listen', 'conditions': 'is_going_to_listen'},
         {'trigger': 'advance', 'source': 'intro', 'dest': 'initial', 'conditions': 'is_going_to_initial'},
         {'trigger': 'advance', 'source': 'lists', 'dest': 'initial', 'conditions': 'is_going_to_initial'},
         {'trigger': 'advance', 'source': 'listen', 'dest': 'initial', 'conditions': 'is_going_to_initial'},
-        #{'trigger': 'advance', 'source': 'end', 'dest': 'initial', 'conditions': 'is_going_to_initial'},
+        {'trigger': 'advance', 'source': 'lyrics', 'dest': 'initial', 'conditions': 'is_going_to_initial'},
         #chat mode
         {'trigger': 'advance', 'source': 'initial', 'dest': 'chat', 'conditions': 'is_going_to_chat'},
         {'trigger': 'advance', 'source': 'chat', 'dest': 'chat2', 'conditions': 'is_going_to_chat2'},
@@ -42,9 +46,12 @@ machine = TocMachine(
         {'trigger': 'advance', 'source': 'chat2', 'dest': 'initial', 'conditions': 'is_going_to_chatEnd'},
         #
         {'trigger': 'advance', 'source': 'intro', 'dest': 'input_search', 'conditions': 'is_going_to_input_search'},
-        #lyrics
-        {'trigger': 'advance', 'source': 'initial', 'dest': 'lyrics', 'conditions': 'is_going_to_lyrics'},
-        {'trigger': 'advance', 'source': 'lyrics', 'dest': 'initial', 'conditions': 'is_going_to_initial'},
+        #recommend
+        {'trigger': 'advance', 'source': 'initial', 'dest': 'age', 'conditions': 'is_going_to_age'},
+        {'trigger': 'advance', 'source': 'age', 'dest': 'gender', 'conditions': 'is_going_to_gender'},
+        {'trigger': 'advance', 'source': 'gender', 'dest': 'recommendFinal', 'conditions': 'is_going_to_recommendFinal'},
+        {'trigger': 'advance', 'source': 'recommendFinal', 'dest': 'initial', 'conditions': 'is_going_to_initial'},
+
         {
             'trigger': 'go_back',
             'source': [
@@ -56,6 +63,9 @@ machine = TocMachine(
                 'lyrics',
                 'chat',
                 'chat2',
+                'age',
+                'gender',
+                'recommendFinal',
             ],
             'dest': 'initial'
         },
@@ -113,10 +123,19 @@ def webhook_handler():
         #輸入錯誤的狀況
         if response == False:
             if machine.state != 'user' and event.message.text.lower() == 'restart':
-                send_text_message(event.reply_token, '輸入『music』進入音樂模式；\n輸入『lyrics』進入歌詞總覽；\n隨時輸入『chat』跟bot聊天；\n隨時輸入『restart』從頭開始。')
+                send_text_message(event.reply_token, '輸入『music』進入音樂模式；\n輸入『rec』進入推薦模式；\n隨時輸入『chat』跟bot聊天；\n\n隨時輸入『restart』從頭開始。')
                 machine.go_back()
             #選項
-            
+            elif machine.state == 'initial':
+                send_text_message(event.reply_token, '輸入『music』進入音樂模式；\n輸入『rec』進入推薦模式；\n隨時輸入『chat』跟bot聊天；\n\n隨時輸入『restart』從頭開始。')
+                machine.go_back()
+            elif machine.state == 'input_search':
+                send_text_message(event.reply_token, '請輸入『藝人介紹』、『作品總表』、『歌詞』或『聽歌』')
+                
+            elif machine.state == 'age':
+                send_text_message(event.reply_token, '請輸入一個整數')
+            elif machine.state == 'gender':
+                send_text_message(event.reply_token, '請輸入『男生』或『女生』')
     return 'OK'
 
 """

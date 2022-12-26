@@ -11,17 +11,15 @@ channel_access_token = os.getenv('LINE_CHANNEL_ACCESS_TOKEN', None)
 line_bot_api = LineBotApi(channel_access_token)
 # global variable
 age = 0
+gender = ''
+recommend = ''
 search = ''
 option = ''
 songName = ''
 height = 0
 weight = 0
 days = 0
-BMR = 0
-TDEE = 0
 part = ''
-diet_type = -1
-df = pd.read_csv('food.csv')
 
 class TocMachine(GraphMachine):
 
@@ -33,7 +31,7 @@ class TocMachine(GraphMachine):
         return True
     #選擇要查詢的分類
     def on_enter_initial(self, event):
-        send_text_message(event.reply_token, '輸入『music』進入音樂模式；\n輸入『lyrics』進入歌詞總覽；\n隨時輸入『chat』跟bot聊天；\n隨時輸入『restart』從頭開始。')
+        send_text_message(event.reply_token, '輸入『music』進入音樂模式；\n輸入『rec』進入推薦模式；\n隨時輸入『chat』跟bot聊天；\n\n隨時輸入『restart』從頭開始。')
     # user start, 輸入 music
     def is_going_to_input_search(self, event):
         text = event.message.text
@@ -50,6 +48,10 @@ class TocMachine(GraphMachine):
             MessageTemplateAction(
                 label = '作品總表',
                 text ='作品總表'
+            ),
+            MessageTemplateAction(
+                label = '歌詞',
+                text ='歌詞'
             ),
             MessageTemplateAction(
                 label = '聽歌',
@@ -74,7 +76,7 @@ class TocMachine(GraphMachine):
             ),
             # 傳文字
             TextSendMessage(  
-                text = "輸入restart回到起始"
+                text = "輸入任意字回到起始"
             ),]
         line_bot_api.reply_message(event.reply_token, message)
 
@@ -93,29 +95,92 @@ class TocMachine(GraphMachine):
             ),
             # 傳文字
             TextSendMessage(  
-                
-                text = "輸入restart回到起始"
+                text = "輸入任意字回到起始"
             ),]
         line_bot_api.reply_message(event.reply_token, message)
 
     def is_going_to_lyrics(self, event):
         text = event.message.text
-        if(text == 'lyrics'):
+        if(text == '歌詞'):
                 return True
         return False
 
     def on_enter_lyrics(self, event):
         message = [
-            #傳圖片
-            #VideoSendMessage( 
-            #    original_content_url = "https://imgur.com/a/TCZhDSO",
-            #    preview_image_url = "https://upload.cc/i1/2022/12/20/Er8RWI.jpg"
-            #),
             # 傳文字
             TextSendMessage(  
-                text = "https://mojim.com/twh242206.htm\n輸入restart回到起始"
+                text = "https://mojim.com/twh242206.htm"
+            ),
+            TextSendMessage(  
+                text = "輸入任意字回到起始"
             ),]
         line_bot_api.reply_message(event.reply_token, message)
+
+    def is_going_to_age(self, event):
+        text = event.message.text
+        if(text == 'rec'):
+                return True
+        return False
+
+    def on_enter_age(self, event):
+        message = [
+            # 傳文字
+            TextSendMessage(  
+                text = "推薦模式\n請輸入您的年齡（整數）"
+            ),]
+        line_bot_api.reply_message(event.reply_token, message)
+
+    def is_going_to_gender(self, event):
+        global age
+        text = event.message.text
+
+        if text.lower().isnumeric():
+            age = int(text)
+            return True
+        return False
+
+    def on_enter_gender(self, event):
+        title = '選擇您的性別'
+        text = '您是『男生』還是『女生』'
+        btn = [
+            MessageTemplateAction(
+                label = '男生',
+                text ='男生'
+            ),
+            MessageTemplateAction(
+                label = '女生',
+                text = '女生'
+            ),
+        ]
+        url = 'https://i.imgur.com/T2bLdbN.jpg'
+        send_button_message(event.reply_token, title, text, btn, url)
+
+    def is_going_to_recommendFinal(self, event):
+        global gender
+        text = event.message.text
+
+        if text == '男生':
+            gender = '男生'
+            return True
+        elif text == '女生':
+            gender = '女生'
+            return True
+        return False
+
+    def on_enter_recommendFinal(self, event):
+        global age, gender, recommend
+        if gender == '男生':
+            if age < 30:
+                recommend = '推薦歌曲：旦保\nhttps://www.youtube.com/watch?v=3m2kF0DPjZU\n輸入任意字回到起始'
+            if age >= 30:
+                recommend = '推薦歌曲：讓你倚靠的力量\nhttps://www.youtube.com/watch?v=7uRSWzbK0Jo\n輸入任意字回到起始'
+        elif gender == '女生':
+            if age < 50:
+                recommend = '推薦歌曲：堯平\nhttps://www.youtube.com/watch?v=XnPQEiAIhUA\n輸入任意字回到起始'
+            if age >= 50:
+                recommend = '推薦歌曲：阿公阿嬤的芭樂\nhttps://www.youtube.com/watch?v=pMU8Yr388d4\n輸入任意字回到起始'
+
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text = recommend))
 
     def is_going_to_listen(self, event):
         text = event.message.text
@@ -139,7 +204,7 @@ class TocMachine(GraphMachine):
             ),
             # 傳文字
             TextSendMessage(  
-                text = "輸入restart回到起始"
+                text = "輸入任意字回到起始"
             ),]
         line_bot_api.reply_message(event.reply_token, message)
     #
