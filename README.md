@@ -1,7 +1,7 @@
 # RY-Music
 
 ## 前言
-”RY-Music“這個LineBot讓使用者能認識特定藝人，整合該藝人介紹、歷年作品總表、提供聽歌服務。
+”RY-Music“這個LineBot讓使用者能認識特定藝人，整合該藝人介紹、歷年作品總表、歌詞，並提供聽歌、推薦歌曲服務。
 
 ## 環境
 - macOS Big Sur 11.6.8
@@ -45,10 +45,14 @@ python3 app.py
     - `music`
         - 進入音樂模式
             - 藝人介紹：藝人簡介以及Youtube/IG/FB連結
-            - 作品總表：回傳歷屆作品圖片
+            - 作品總表：提供歷屆作品圖片
+            - 歌詞：提供歌詞連結
             - 聽歌：精選十首熱門歌曲，提供Spotify/Youtube/KKBOX連結
+    - `rec`
+            - 切換到推薦歌曲模式
     - `chat`
             - 切換到聊天模式
+
     - `restart`
         - reset所有資訊，返回initial state
 
@@ -59,7 +63,11 @@ python3 app.py
 - input_search:音樂模式，輸入查詢項目
 - intro:藝人介紹
 - lists:作品總表
+- lyrics:歌詞
 - intro:聽歌
+- age:推薦模式下輸入年齡
+- age:推薦模式下輸入年齡後輸入性別
+- recommendFinal:推薦歌曲
 - chat/chat2:聊天模式
 - end:結束
 
